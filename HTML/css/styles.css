@@ -1,0 +1,39 @@
+body, html {
+    font-family: system_ui;
+    height: 100%;
+}
+
+.image-container {
+    background-color:black;
+    background-image: url("../images/background_image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center center;
+    padding-top: 100%;
+    padding-left: 100%;
+    background-size:contain;
+    background-blend-mode:difference;
+    background-origin:border-box;
+    position:fixed;
+    
+}
+.button {
+    position:fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+    border:cadetblue;
+    color:darkcyan;
+    padding: 13px 15px;
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgb(44, 49, 52);
+    object-position:0%;
+    
+}
+
+
