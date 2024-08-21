@@ -2,11 +2,15 @@
   "name": "exit52",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "run"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^10.8.2",
+    "fs": "^0.0.1-security"
+  }
 }

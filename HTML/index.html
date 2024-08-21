@@ -5,7 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Snow Prediction</title>
         <link rel="stylesheet" href="css/styles.css">
-        <script type="text/javascript" src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="module" defer>
+            import { displayPrediction, todaysPrediction } from "./app.js"
+            window.displayPrediction = displayPrediction;
+
+        </script>
+        <!--<script type="module">
+            window.onload = () => {
+                import { displayPrediction, todaysPrediction } from "./app.js";
+                console.log("Scripts imported");
+        
+                // Make displayPrediction globally available
+                window.displayPrediction = displayPrediction;
+            };
+        </script>-->
     </head>
     <body>
         <div class="image-container">
@@ -13,10 +27,10 @@
         </div>   
     <div id='float-container' class="float-container">
             <div class="float-child">
-                <box1 class="box">BOX ONE</box1>
+                <box1 id="box1" class="box"></box1>
             </div>
             <div class="float-child">
-                   <box2 class="box">document.write(tomorrowsPrediction())</box2>
+                   <box2 id="box2" class="box">BOX TWO</box2>
             </div>   
     </div>
     </body>

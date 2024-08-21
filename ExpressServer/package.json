@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Exit 52"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "npm": "^10.8.2"
+  },
+  "keywords": [],
+  "description": ""
+}

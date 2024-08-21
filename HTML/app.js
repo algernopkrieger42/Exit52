@@ -1,42 +1,58 @@
-import fs from "fs";
-function displayPrediction() {
+//import fs from 'fs';
+//import fs from 'fs';
+
+var date;
+var prediction;
+var inches;
+var output;
+var data;
+
+export async function displayPrediction() {
     document.getElementById("button").style.display = 'none';
     document.getElementById("float-container").style.display = 'block';
 }
 
-function todaysPrediction() { 
-    fs.readFile("./predictions.json", 'utf8', (error, data) => {
-        if (error){
-            console.log(error);
-            return;
-        }
-        var date = JSON.parse(data).Todays_Date;
-        var prediction = JSON.parse(data).Todays_Prediction;
-        var inches = "in";
-        var output = date +  " " + prediction + inches;
-        console.log(output);
-        return output;
-    })
+export function todaysPrediction(json) { 
+    var date = json.Todays_Date;
+    var prediction = json.Todays_Prediction;
+    var inches = " inches";
+    var output = date +  " " + prediction + inches;
+    console.log(output);
+    document.getElementById("box1").innerHTML = output;
+    return output;
 }
 
-function tomorrowsPrediction() { 
-    fs.readFile("./predictions.json", 'utf8', (error, data) => {
-        if (error){
-            console.log(error);
-            return;
-        }
-        var date = JSON.parse(data).Tomorrows_Date;
-        var prediction = JSON.parse(data).Tomorrows_Prediction;
-        var inches = "in";
-        var output = date +  " " + prediction + inches;
-        console.log(output);
-        return output;
-    })
+function tomorrowsPrediction(json) { 
+    var date = json.Tomorrows_Date;
+    var prediction = json.Tomorrows_Prediction;
+    var inches = " inches";
+    var output = date +  " " + prediction + inches;
+    document.getElementById("box2").innerHTML = output;
+    return output;
 }
 
-function displayPredictions(){
-    todaysPrediction();
-    tomorrowsPrediction();
+async function fetchAPI() {
+    try {
+        const response = await fetch('http://localhost:3000/predictions.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json(); // Parse the JSON data
+        return data; // Return the parsed data
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        throw error; // Rethrow the error to handle it outside the function
+    }
 }
+
+try {
+    data = await fetchAPI(); // Wait for the fetchAPI promise to resolve and save the data to a variable
+
+    todaysPrediction(data); // Example function call
+    tomorrowsPrediction(data);
+} catch (error) {
+    console.error('Error:', error);
+}
+
 
 
