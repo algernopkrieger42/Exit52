@@ -1,0 +1,2 @@
+name,datetime,temp,feelslike,dew,humidity,precip,precipprob,preciptype,snow,snowdepth,windgust,windspeed,winddir,sealevelpressure,cloudcover,visibility,solarradiation,solarenergy,uvindex,severerisk,conditions,icon,stations
+"Snoqualmie Pass, WA, United States",2024-08-21T19:00:00,56.2,56.2,51.8,85,0,0,,0,0,9.4,4.5,266,1015,0,1.3,20,0.1,0,,Clear,clear-day,"SNO30,TCURT,KRNT,SNO38"
