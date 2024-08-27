@@ -1,7 +1,5 @@
 import pandas as pd
-from datetime import datetime
-
-
+from datetime import datetime, time, timedelta
 
 '''def manipulateForecastData():
     df = pd.read_csv('Data/CurrentData/TodaysHourlyForecast.csv')
@@ -15,4 +13,10 @@ from datetime import datetime
         df.loc[df.index[x - 1], 'high'] = df.loc[x:len(df.index), 'high'].max()
         df.loc[df.index[x-1], 'precip'] = df.loc[x:len(df.index), 'precip'].sum()
     df.to_csv('Data/CurrentAverages/Todays_Manipulated_Forecast.csv', index=False)'''
+
+print(datetime.now().time() > 12)
+print(datetime.now().time() + timedelta(hours=1))
+
+
+
 
