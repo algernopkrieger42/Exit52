@@ -4,13 +4,27 @@ import pandas as pd
 class DataManipulationObject:
     def __init__(self):
         self.denominator = 1
+        self.todaysPrediction = 100
+        self.tomorrowsPrediction = 50
 
-    def makeDF(self):
+    def getTodaysPrediction(self):
+        return self.todaysPrediction
+
+    def getTomorrowsPrediction(self):
+        return self.tomorrowsPrediction
+
+    def updateTodaysPrediction(self, newTodaysPrediction):
+        self.todaysPrediction = newTodaysPrediction
+
+    def updateTomorrowsPrediction(self, newTomorrowsPrediction):
+        self.tomorrowsPrediction = newTomorrowsPrediction
+
+    def makeAveragesDF(self):
         df = pd.DataFrame([[0.0, 0.0, 0.0, 0.0]], columns=['avgTempF', 'maxTempF', 'minTempF', 'precipIn'], dtype=float)
         df.to_csv("Data/CurrentAverages/CurrentAverages.csv", index=False)
 
     def dfForModel(self):
-        df = pd.DataFrame([[0.0, 0.0, 0.0, 0.0]], columns=['avgTempF', 'maxTempF', 'minTempF', 'precipIn'], dtype=float)
+        df = pd.DataFrame([[0.0, 0.0, 0.0, 0.0]], columns=['avgtempF', 'maxtempF', 'mintempF', 'totalprecipIn'], dtype=float)
         return df
 
     def getHour(self):
@@ -52,10 +66,3 @@ class DataManipulationObject:
         df = df.drop(df.index[-1:])
         df.iloc[-1] = 0
         df.to_csv('Data/CurrentAverages/Todays_Manipulated_Forecast.csv', index=False)
-
-
-testObject = DataManipulationObject()
-newWeatherDF = testObject.manipulateForecastData()
-
-#currentAverages = testObject.getCurrentWeatherAverages()
-#print(currentAverages.loc[0,'avgTemp'])'''

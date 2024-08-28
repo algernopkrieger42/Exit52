@@ -27,7 +27,3 @@ class WeatherAPI:
             print(f"HTTP Error: {e.code}")
         except urllib.error.URLError as e:
             print(f"URL Erroar: {e.reason}")
-
-weather = WeatherAPI()
-weather.getCurrent()
-weather.getForecast()

@@ -1,12 +1,10 @@
-from telnetlib import theNULL
-
-import numpy as np
-import pandas as pd
 
 from DataManipulationObject import DataManipulationObject
 from WeatherAPI import WeatherAPI
-from datetime import datetime, time
+from datetime import datetime, time, date, timedelta
+from PredictionSoftware import getPrediction
 import time
+import json
 #from prediction_code import getPrediction
 
 
@@ -19,10 +17,11 @@ def main():
 
 
 def timingTheStart():
-    startTime = time(hour=23, minute=30, second=0)
+    startTime = time(hour=0, minute=5, second=0)
     currentTime = datetime.now().time()
+    print("made it to timing the thing")
     while currentTime > startTime:
-        time.sleep(300)
+        time.sleep(180)
         currentTime = datetime.now().time()
     runningAPI()
 
@@ -39,15 +38,31 @@ def runningAPI():
     try:
         while True:
             if currentTime > nextTime:
+                #to the minute weather
                 weatherGetter.getCurrent()
                 #forecast data is only grabbed once a day
-                if nextTime.hour is 0:
+                if currentTime.hour == 0:
+                    #tomorrows prediction becomes todays prediction
+                    todaysPrediction = dataObject.getTomorrowsPrediction()
+                    dataObject.updateTodaysPrediction(todaysPrediction)
+                    #get daily forecast
                     weatherGetter.getForecast()
                     time.sleep(5)
+                    #prep forecast for use
                     dataObject.manipulateForecastData()
-                    dataObject.makeDF()
+                    #make new df for real weather data
+                    dataObject.makeAveragesDF()
+                    print("made it to runningAPI at" + str(currentTime))
+                #update real weather df
                 updateAverages(dataObject)
-                prepDataForModel(dataObject)
+                #combine forecast and real data for model
+                modelData = prepDataForModel(dataObject)
+                #make prediction
+                prediction = getPrediction(modelData)
+                #store updated prediction
+                dataObject.updateTomorrowsPrediction(prediction)
+                #write to json
+                bringJsonInfoTogether(dataObject)
                 nextHour = (currentTime.hour + 1) % 24
                 nextTime = time(hour=nextHour, minute=0, second=0)
             else:
@@ -75,13 +90,68 @@ def prepDataForModel(dataObject):
     currentAverages = dataObject.getCurrentWeatherAverages()
     hour = dataObject.getHour()
     if hour != 23:
-        modelData.loc[0,'avgTempF'] = (forecastData.loc[hour,'avgTempF'] + currentAverages.loc[0,'avgTemp']) / 24
-        modelData.loc[0,'minTempF'] = min(forecastData.loc[hour,'minTempF'] + currentAverages.loc[0,'minTemp'])
-        modelData.loc[0,'maxTempF'] = max(forecastData.loc[hour,'maxTempF'], currentAverages.loc[0,'maxTemp'])
-        modelData.loc[0,'precipIn'] = forecastData.loc[hour,'precipIn'] + currentAverages.loc[0,'precipIn']
+        modelData.loc[0,'avgtempF'] = (forecastData.loc[hour,'avgTempF'] + currentAverages.loc[0,'avgTempF']) / 24
+        modelData.loc[0,'mintempF'] = min(forecastData.loc[hour,'minTempF'] + currentAverages.loc[0,'minTempF'])
+        modelData.loc[0,'maxtempF'] = max(forecastData.loc[hour,'maxTempF'], currentAverages.loc[0,'maxTempF'])
+        modelData.loc[0,'totalprecipIn'] = forecastData.loc[hour,'precipIn'] + currentAverages.loc[0,'precipIn']
     else:
-        modelData.loc[0, 'avgTempF'] = currentAverages.loc[0, 'avgTemp'] / 24
-        modelData.loc[0, 'minTempF'] = currentAverages.loc[0, 'minTemp']
-        modelData.loc[0, 'maxTempF'] = currentAverages.loc[0, 'maxTemp']
-        modelData.loc[0, 'precipIn'] = currentAverages.loc[0, 'precipIn']
+        modelData.loc[0, 'avgtempF'] = currentAverages.loc[0, 'avgTempF'] / 24
+        modelData.loc[0, 'mintempF'] = currentAverages.loc[0, 'minTempF']
+        modelData.loc[0, 'maxtempF'] = currentAverages.loc[0, 'maxTempF']
+        modelData.loc[0, 'totalprecipIn'] = currentAverages.loc[0, 'precipIn']
+    return modelData
 
+def bringJsonInfoTogether(dataObject):
+    todaysDate = get_date()
+    tomorrowDate = get_tomorrow_date()
+    todaysPrediction = dataObject.getTomorrowsPrediction()
+    tomorrowsPrediction = dataObject.getTomorrowsPrediction()
+    toJson(todaysPrediction, tomorrowsPrediction, todaysDate, tomorrowDate)
+    print(todaysPrediction + str(todaysPrediction))
+    print(tomorrowsPrediction + str(tomorrowsPrediction))
+
+def determineOriginalIndicator(day):
+    if 11 <= day <= 13:
+        return "th"
+    elif day % 10 == 1:
+        return "st"
+    elif day % 10 == 2:
+        return "nd"
+    elif day % 10 == 3:
+        return "rd"
+    else:
+        return "th"
+
+def get_date():
+    try:
+        today = date.today()
+        ordinalIndicator = determineOriginalIndicator(today.day)
+        today = today.strftime('%A %b %d')
+        todayStatement = "Today - " + str(today) + ordinalIndicator + " Prediction:"
+        return todayStatement
+    except Exception as e:
+        print(f"an error occurred in get_date: {e}")
+
+def get_tomorrow_date():
+    try:
+        today = date.today()
+        tomorrow = today + timedelta(days=1)
+        ordinalIndicator = determineOriginalIndicator(tomorrow.day)
+        tomorrow = tomorrow.strftime('%A %b %d')
+        dateStatement = "Tomorrow - " + str(tomorrow) + ordinalIndicator + " Prediction:"
+        return dateStatement
+    except Exception as e:
+        print(f"an error occurred in get_tomorrow_date: {e}")
+
+def toJson(todayPrediction, tomorrowPrediction, todayDate, tomorrowDate):
+    with open("../react-app/src/predictions.json", mode="w") as file:
+        data = {
+            "Todays_Prediction": todayPrediction,
+            "Tomorrows_Prediction": tomorrowPrediction,
+            "Todays_Date": todayDate,
+            "Tomorrows_Date": tomorrowDate
+         }
+        json.dump(data, file)
+
+if __name__ == "__main__":
+    main()
