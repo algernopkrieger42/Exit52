@@ -4,21 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Snow Prediction</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="HTML/css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="module" defer>
-            import { displayPrediction, todaysPrediction } from "./app.js"
+            import { displayPrediction, todaysPrediction } from "./HTML/app.js"
             window.displayPrediction = displayPrediction;
         </script>
-        <!--<script type="module">
-            window.onload = () => {
-                import { displayPrediction, todaysPrediction } from "./app.js";
-                console.log("Scripts imported");
-        
-                // Make displayPrediction globally available
-                window.displayPrediction = displayPrediction;
-            };
-        </script>-->
     </head>
     <body>
         <div class="image-container">
