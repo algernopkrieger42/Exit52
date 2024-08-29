@@ -1,9 +1,8 @@
 from datetime import datetime
 import pandas as pd
 
-class DataManipulationObject:
+class DataManipulator:
     def __init__(self):
-        self.denominator = 1
         self.todaysPrediction = 100
         self.tomorrowsPrediction = 50
 
@@ -24,20 +23,11 @@ class DataManipulationObject:
         df.to_csv("Data/CurrentAverages/CurrentAverages.csv", index=False)
 
     def dfForModel(self):
-        df = pd.DataFrame([[0.0, 0.0, 0.0, 0.0]], columns=['avgtempF', 'maxtempF', 'mintempF', 'totalprecipIn'], dtype=float)
+        df = pd.DataFrame([[0.0, 0.0, 0.0, 0.0]], columns=['maxtempF', 'mintempF','avgtempF', 'totalprecipIn'], dtype=float)
         return df
 
     def getHour(self):
         return datetime.now().hour
-
-    def getDenominator(self):
-        return self.denominator
-
-    def resetDenominator(self):
-        self.denominator = 1
-
-    def iterateDenominator(self):
-        self.denominator += 1
 
     def getNewCurrentWeather(self):
         return pd.read_csv("Data/CurrentData/CurrentWeather.csv")
@@ -46,7 +36,7 @@ class DataManipulationObject:
         return pd.read_csv('Data/CurrentAverages/CurrentAverages.csv')
 
     def storeCurrentWeatherAverages(self, df):
-        df.to_csv("Data/CurrentData/CurrentWeather.csv", index=False)
+        df.to_csv("Data/CurrentAverages/CurrentAverages.csv", index=False)
 
     def getForecastAverages(self):
         return pd.read_csv('Data/CurrentAverages/Todays_Manipulated_Forecast.csv')

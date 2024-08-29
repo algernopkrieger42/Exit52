@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639c8c54-3d04-4ac3-a4b3-7e8ac1c2ad0a" name="Changes" comment="Updates">
+      <change beforePath="$PROJECT_DIR$/../ExpressServer/predictions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/predictions.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/HistoricalData/kNNReadyFeatures.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/HistoricalData/kNNReadyScaledFeatures.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataManipulationObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulationObject.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PredictionMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PredictionSoftware.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionSoftware.py" afterDir="false" />
@@ -45,6 +49,7 @@
   "keyToString": {
     "Python.DataManipulationObject.executor": "Run",
     "Python.PredictionMain.executor": "Run",
+    "Python.PredictionSoftware.executor": "Run",
     "Python.WeatherAPI.executor": "Run",
     "Python.testingthings.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -77,7 +82,9 @@
       <workItem from="1724282987268" duration="1519000" />
       <workItem from="1724285316327" duration="4493000" />
       <workItem from="1724297037448" duration="6542000" />
-      <workItem from="1724618605383" duration="20523000" />
+      <workItem from="1724618605383" duration="20865000" />
+      <workItem from="1724807799309" duration="1439000" />
+      <workItem from="1724809294777" duration="14862000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
@@ -93,14 +100,26 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updates" />
     <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PredictionAPI$PredictionMain.coverage" NAME="PredictionMain Coverage Results" MODIFIED="1724807305444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PredictionAPI$PredictionMain.coverage" NAME="PredictionMain Coverage Results" MODIFIED="1724906014841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PredictionAPI$WeatherAPI.coverage" NAME="WeatherAPI Coverage Results" MODIFIED="1724718683439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PredictionAPI$DataManipulationObject.coverage" NAME="DataManipulationObject Coverage Results" MODIFIED="1724737462394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PredictionAPI$testingthings.coverage" NAME="testingthings Coverage Results" MODIFIED="1724805272289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PredictionAPI$PredictionSoftware.coverage" NAME="PredictionSoftware Coverage Results" MODIFIED="1724881385635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PredictionAPI$DataManipulationObject.coverage" NAME="DataManipulationObject Coverage Results" MODIFIED="1724808227050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PredictionAPI$testingthings.coverage" NAME="testingthings Coverage Results" MODIFIED="1724902466200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

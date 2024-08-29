@@ -2,7 +2,7 @@ import urllib.request
 from datetime import date
 
 
-class WeatherAPI:
+class WeatherGetter:
 #Grab api testData once an hour
     def getCurrent(self):
         url1_current = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/snoqualmie%20pass?unitGroup=us&include=current&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv"
