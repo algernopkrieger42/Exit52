@@ -33,7 +33,7 @@ function tomorrowsPrediction(json) {
 
 async function fetchAPI() {
     try {
-        const response = await fetch('https://hot-walls-buy.loca.lt/predictions.json');
+        const response = await fetch('https://empty-knives-do.loca.lt/predictions.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

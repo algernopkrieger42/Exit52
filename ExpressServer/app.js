@@ -5,7 +5,7 @@ import cors from 'cors';
 import { fileURLToPath } from 'url';
 
 const app = express();
-const port = 3001;
+const port = 3002;
 
 // Get __filename and __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);
