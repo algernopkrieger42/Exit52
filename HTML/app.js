@@ -33,7 +33,7 @@ function tomorrowsPrediction(json) {
 
 async function fetchAPI() {
     try {
-        const response = await fetch('http://localhost:3000/predictions.json');
+        const response = await fetch('https://plenty-deer-rush.loca.lt/predictions.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
