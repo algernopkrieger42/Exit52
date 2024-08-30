@@ -31,9 +31,27 @@ function tomorrowsPrediction(json) {
     return output;
 }
 
-async function fetchAPI() {
+/*async function fetchAPI() {
     try {
         const response = await fetch('https://long-cases-drop.loca.lt/predictions.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json(); // Parse the JSON data
+        return data; // Return the parsed data
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        throw error; // Rethrow the error to handle it outside the function
+    }
+}*/
+
+async function fetchAPI() {
+    try {
+        const response = await fetch('https://long-cases-drop.loca.lt/predictions.json', {
+            headers: {
+                'bypass-tunnel-reminder': 'bypass', // You can use any string value here
+            }
+        });
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
