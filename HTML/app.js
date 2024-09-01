@@ -47,7 +47,7 @@ function tomorrowsPrediction(json) {
 
 async function fetchAPI() {
     try {
-        const response = await fetch('https://eighty-owls-live.loca.lt', {
+        const response = await fetch('https://eighty-owls-live.loca.lt/predictions.json', {
             headers: {
                 'bypass-tunnel-reminder': 'bypass', // You can use any string value here
             }
