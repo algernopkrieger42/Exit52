@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639c8c54-3d04-4ac3-a4b3-7e8ac1c2ad0a" name="Changes" comment="Updates">
-      <change beforePath="$PROJECT_DIR$/.idea/PredictionAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PredictionAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataManipulationObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulationObject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
