@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639c8c54-3d04-4ac3-a4b3-7e8ac1c2ad0a" name="Changes" comment="Updates">
-      <change beforePath="$PROJECT_DIR$/../ExpressServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExpressServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExpressServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PredictionAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PredictionAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataManipulationObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulationObject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionMain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +52,14 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
-        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
       </set>
     </attachedChunks>
   </component>

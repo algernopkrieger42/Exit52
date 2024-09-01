@@ -1,6 +1,7 @@
 from datetime import datetime
 import pandas as pd
 
+
 class DataManipulator:
     def __init__(self):
         self.todaysPrediction = 100
@@ -23,7 +24,8 @@ class DataManipulator:
         df.to_csv("Data/CurrentAverages/CurrentAverages.csv", index=False)
 
     def dfForModel(self):
-        df = pd.DataFrame([[0.0, 0.0, 0.0, 0.0]], columns=['maxtempF', 'mintempF','avgtempF', 'totalprecipIn'], dtype=float)
+        df = pd.DataFrame([[0.0, 0.0, 0.0, 0.0]], columns=['maxtempF', 'mintempF', 'avgtempF', 'totalprecipIn'],
+                          dtype=float)
         return df
 
     def getHour(self):
@@ -49,10 +51,10 @@ class DataManipulator:
         df['maxTempF'] = df['avgTempF']
 
         for x in range(1, len(df.index)):
-            df.loc[df.index[x-1], 'avgTempF'] = df.loc[x:len(df.index), 'avgTempF'].sum()
-            df.loc[df.index[x-1], 'minTempF'] = df.loc[x:len(df.index), 'minTempF'].min()
-            df.loc[df.index[x-1], 'maxTempF'] = df.loc[x:len(df.index), 'maxTempF'].max()
-            df.loc[df.index[x-1], 'precipIn'] = df.loc[x:len(df.index), 'precipIn'].sum()
+            df.loc[df.index[x - 1], 'avgTempF'] = df.loc[x:len(df.index), 'avgTempF'].sum()
+            df.loc[df.index[x - 1], 'minTempF'] = df.loc[x:len(df.index), 'minTempF'].min()
+            df.loc[df.index[x - 1], 'maxTempF'] = df.loc[x:len(df.index), 'maxTempF'].max()
+            df.loc[df.index[x - 1], 'precipIn'] = df.loc[x:len(df.index), 'precipIn'].sum()
         df = df.drop(df.index[-1:])
         df.iloc[-1] = 0
         df.to_csv('Data/CurrentAverages/Todays_Manipulated_Forecast.csv', index=False)
