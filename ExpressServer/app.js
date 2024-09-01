@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(cors({
-    origin: 'https://algernopkrieger42.github.io/Exit52/',
+    origin: '*',
 }));
 
 // Serve the latest predictions.json file
