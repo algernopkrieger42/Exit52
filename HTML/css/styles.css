@@ -42,11 +42,11 @@ body, html {
     
 }
 
-.button:hover {
+/*.button:hover {
     box-shadow: inset 250px 0 0 0 black;
     cursor: pointer;
     color: darkcyan;
-}
+}*/
 
 
 
@@ -87,6 +87,10 @@ body, html {
     justify-content: center; 
     align-items: center; 
     white-space: pre-wrap;
+    word-wrap: normal; /* Prevent breaking words mid-word */
+    overflow-wrap: normal; /* Prevent breaking words mid-word */
+    width: fit-content; /* Ensure the box fits its content */
+    max-width: 100%; /* Prevents overflowing the container */
 }
 
 
