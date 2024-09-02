@@ -9,14 +9,14 @@ var data;
 
 export async function displayPrediction() {
     document.getElementById("button").style.display = 'none';
-    document.getElementById("float-container").style.display = 'block';
+    document.getElementById("float-container").style.display = 'flex';
 }
 
 export function todaysPrediction(json) { 
     var date = json.Todays_Date;
     var prediction = json.Todays_Prediction;
     var inches = " inches";
-    var output = date +  " " + prediction + inches;
+    var output = date +  "\n" + prediction + inches;
     console.log(output);
     document.getElementById("box1").innerHTML = output;
     return output;
@@ -26,7 +26,7 @@ function tomorrowsPrediction(json) {
     var date = json.Tomorrows_Date;
     var prediction = json.Tomorrows_Prediction;
     var inches = " inches";
-    var output = date +  " " + prediction + inches;
+    var output = date +  "\n" + prediction + inches;
     document.getElementById("box2").innerHTML = output;
     return output;
 }
