@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="HTML/css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="module" defer>
-            import { displayPrediction, todaysPrediction } from "./HTML/app.js"
+            import { displayPrediction, displayInfo, hideInfo } from "./HTML/app.js"
             window.displayPrediction = displayPrediction;
+            window.displayInfo = displayInfo
+            window.hideInfo = hideInfo
         </script>
 
         <!-- Open Graph meta tags for social media sharing -->
@@ -33,5 +35,7 @@
                 <box2 id="box2" class="box">Pow Not Found</box2>
             </div>   
         </div>
+        <div id="infoButton" class="infoButton" onclick="displayInfo()">info</div>
+        <div id="infoAsButton" class="infoAsButton" onclick="hideInfo()"></div>
     </body>
 </html>

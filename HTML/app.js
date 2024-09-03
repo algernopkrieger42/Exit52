@@ -12,7 +12,17 @@ export async function displayPrediction() {
     document.getElementById("float-container").style.display = 'flex';
 }
 
-export function todaysPrediction(json) { 
+export async function displayInfo(){
+    document.getElementById("infoButton").style.display = 'none';
+    document.getElementById("infoAsButton").style.display = 'flex';
+}
+
+export async function hideInfo(){
+    document.getElementById("infoAsButton").style.display = 'none';
+    document.getElementById("infoButton").style.display = 'flex';
+}
+
+function todaysPrediction(json) { 
     var date = json.Todays_Date;
     var prediction = json.Todays_Prediction;
     var inches = " inches";
@@ -49,11 +59,20 @@ async function fetchAPI() {
     }
 }
 
+function setInfo() {
+    
+    var info = "This site was built as a way to share independently formulated snowfall predictions for Snoqualmie Pass";
+    var info2 = " in an effort to improve upon predictions provided by traditional sources";
+    var fullInfo = info + info2;
+    document.getElementById("infoAsButton").innerHTML = fullInfo;
+}
+
 try {
     data = await fetchAPI(); // Wait for the fetchAPI promise to resolve and save the data to a variable
 
     todaysPrediction(data); // Example function call
     tomorrowsPrediction(data);
+    setInfo()
 } catch (error) {
     console.error('Error:', error);
 }

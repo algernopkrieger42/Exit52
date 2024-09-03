@@ -134,10 +134,9 @@ def determineOriginalIndicator(day):
 
 def get_date():
     try:
-        today = date.today()
-        ordinalIndicator = determineOriginalIndicator(today.day)
-        today = today.strftime('%A %b %d')
-        todayStatement = "Today - " + str(today) + ordinalIndicator + " Prediction:"
+        current_date = datetime.now()
+        formatted_date = current_date.strftime("%-m/%-d/%y")
+        todayStatement = "Today - " + str(formatted_date) + "'s" + " Prediction:"
         return todayStatement
     except Exception as e:
         print(f"an error occurred in get_date: {e}")
@@ -145,11 +144,10 @@ def get_date():
 
 def get_tomorrow_date():
     try:
-        today = date.today()
-        tomorrow = today + timedelta(days=1)
-        ordinalIndicator = determineOriginalIndicator(tomorrow.day)
-        tomorrow = tomorrow.strftime('%A %b %d')
-        dateStatement = "Tomorrow - " + str(tomorrow) + ordinalIndicator + " Prediction:"
+        current_date = datetime.now()
+        tomorrow_date = current_date + timedelta(days=1)
+        formatted_tomorrow = tomorrow_date.strftime("%-m/%-d/%y")
+        dateStatement = "Tomorrow - " + str(formatted_tomorrow) + "'s" + " Prediction:"
         return dateStatement
     except Exception as e:
         print(f"an error occurred in get_tomorrow_date: {e}")

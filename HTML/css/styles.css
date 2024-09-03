@@ -78,7 +78,6 @@ body, html {
     display: block;
     text-align: center;
     z-index: 4;
-    color:darkcyan; 
     padding: 10px 15px;
     background-color: rgb(6, 13, 38);
     border-radius: 12px;
@@ -90,6 +89,42 @@ body, html {
     overflow-wrap: normal;
     width: fit-content; 
     max-width: 100%;
+}
+
+.infoButton {
+    position: fixed;
+    border: 1px solid black;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(6, 13, 38);
+    color:darkcyan;
+}
+
+.infoAsButton {
+    position: fixed;
+    border: 1px solid black;
+    display: none; 
+    justify-content: center; 
+    align-items: center; 
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(6, 13, 38);
+    color:darkcyan;
+    white-space: normal;
+    word-wrap: normal; 
+    overflow-wrap: normal;
+    max-width: 90%;
 }
 
 
