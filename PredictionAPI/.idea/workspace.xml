@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639c8c54-3d04-4ac3-a4b3-7e8ac1c2ad0a" name="Changes" comment="Updates">
-      <change beforePath="$PROJECT_DIR$/.idea/PredictionAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PredictionAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExpressServer/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/express.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExpressServer/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExpressServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExpressServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExpressServer/predictions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/predictions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExpressServer/start-server-and-tunnel.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/start-server-and-tunnel.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataManipulationObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulationObject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testingthings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingthings.py" afterDir="false" />
     </list>
@@ -46,7 +56,6 @@
     "Python.testingthings.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/conradnark/GitHub/Exit52/PredictionAPI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,7 +65,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

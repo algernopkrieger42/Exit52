@@ -5,7 +5,7 @@ from datetime import date
 class WeatherGetter:
 #Grab api testData once an hour
     def getCurrent(self):
-        url1_current = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/snoqualmie%20pass?unitGroup=us&include=current&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv"
+        url1_current = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/47.4244,-121.4184/?unitGroup=us&include=current&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv"
         try:
             # Download the CSV file from the URL
             urllib.request.urlretrieve(url1_current, "Data/CurrentData/CurrentWeather.csv")
