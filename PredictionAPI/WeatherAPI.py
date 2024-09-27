@@ -27,3 +27,19 @@ class WeatherGetter:
             print(f"HTTP Error: {e.code}")
         except urllib.error.URLError as e:
             print(f"URL Erroar: {e.reason}")
+
+    def getTestingData(self):
+        url1_current = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/47.4219,-121.4217/2023-11-01/2024-04-29/?unitGroup=us&include=days&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv'
+        try:
+            # Download the CSV file from the URL
+            urllib.request.urlretrieve(url1_current, "Data/CurrentData/VisualCrossing23:24.csv")
+
+        except urllib.error.HTTPError as e:
+            print(f"HTTP Error: {e.code}")
+        except urllib.error.URLError as e:
+            print(f"URL Erroar: {e.reason}")
+
+
+'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/47.4244,-121.4184/1990-11-01/1991-04-01/?unitGroup=us&include=hours&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv'
+'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/47.4244,-121.4184/1990-11-01/1990-11-03/?unitGroup=us&include=days&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv'
+'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/47.4219,-121.4217/1990-11-01/1991-04-30/?unitGroup=us&include=days&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv'
