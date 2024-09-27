@@ -4,8 +4,8 @@ import pandas as pd
 
 class DataManipulator:
     def __init__(self):
-        self.todaysPrediction = 100
-        self.tomorrowsPrediction = 50
+        self.todaysPrediction = 0
+        self.tomorrowsPrediction = 0
 
     def getTodaysPrediction(self):
         return self.todaysPrediction

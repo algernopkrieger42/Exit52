@@ -15,7 +15,7 @@ def main():
 
 
 def timingTheStart():
-    startTime = a_time(hour=0, minute=1, second=0)
+    startTime = a_time(hour=0, minute=5, second=0)
     currentTime = datetime.now().time()
     print("made it to timing the thing")
     while currentTime > startTime:
@@ -30,8 +30,8 @@ def runningAPI():
     #instanciate object for data manipulation
     dataObject = DataManipulator()
     #time first hourly data call
-    nextTime = a_time(hour=0, minute=5, second=0)
-    currentTime = datetime.now().time()
+    currentTime = datetime.now()
+    nextTime = currentTime.replace(minute=0, second=0, microsecond=0)
     try:
         while True:
             if currentTime > nextTime:
@@ -48,11 +48,11 @@ def runningAPI():
                     dataObject.manipulateForecastData()
                     #make new df for real weather data
                     dataObject.makeAveragesDF()
-                    print("made it to runningAPI at" + str(currentTime))
                 #update real weather df
                 updateAverages(dataObject)
                 #combine forecast and real data for model
                 modelData = prepDataForModel(dataObject)
+                print("DATA FOR MODEL: ")
                 print(modelData)
                 #make prediction
                 prediction = getPrediction(modelData)
@@ -61,12 +61,11 @@ def runningAPI():
                 #write to json
                 bringJsonInfoTogether(dataObject)
                 #setup next cycle time
-                nextHour = (currentTime.hour + 1) % 24
-                nextTime = a_time(hour=nextHour, minute=0, second=0)
+                nextTime = (nextTime + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
                 print("next time: " + str(nextTime))
             else:
                 time.sleep(300)
-                currentTime = datetime.now().time()
+                currentTime = datetime.now()
     except KeyboardInterrupt:
         print("Program interrupted by user. Exiting...")
     except Exception as e:
