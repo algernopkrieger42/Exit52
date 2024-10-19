@@ -1,2 +1,2 @@
 name,datetime,temp,feelslike,dew,humidity,precip,precipprob,preciptype,snow,snowdepth,windgust,windspeed,winddir,sealevelpressure,cloudcover,visibility,solarradiation,solarenergy,uvindex,severerisk,conditions,icon,stations
-"47.4244,-121.4184",2024-09-25T23:18:00,43.3,43.3,42.9,98.5,0,0,,0,0,5.5,0.6,5,1014,88,1.2,0,0,0,,Partially cloudy,partly-cloudy-night,"TALPE,TDENN,TFRAN,KRNT"
+"47.4244,-121.4184",2024-10-18T13:50:00,38.2,38.2,35.3,89,0,0,,0,0,3.6,1.7,24,1023,100,1.2,126,0.5,1,,Overcast,cloudy,"F6102,TALPE,TFRAN,KRNT"

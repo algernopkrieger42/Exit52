@@ -1,41 +1,39 @@
-import time
-from datetime import time as a_time
-from datetime import date, datetime, timedelta
-'''currentTime = datetime.now().time()
-nextTime = a_time(hour=currentTime.hour, minute=0, second=0)
+from datetime import datetime
 
-while True:
-    if currentTime > nextTime:
-        nextHour = (currentTime.hour + 1) % 24
-        nextTime = a_time(hour=nextHour, minute=0, second=0)
-        print("Current Time: " + str(currentTime))
-        print("Next Time: " + str(nextTime))
-    else:
-        time.sleep(300)
-        currentTime = datetime.now().time()'''
+import pandas as pd
 
-import time
-from datetime import time as a_time
-from datetime import datetime, timedelta
 
-# Initialize current time
-currentTime = datetime.now()
-print(currentTime)
-# Set the next target time (start from the next full hour)
-nextTime = (currentTime + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
-print(nextTime)
-while True:
-    # Check if the current time has passed or reached the nextTime
-    if currentTime >= nextTime:
-        # Update nextTime to the next full hour
-        nextTime = (nextTime + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
-        # Print current time and next time
-        print("Current Time: " + currentTime.strftime('%H:%M:%S'))
-        print("Next Time: " + nextTime.strftime('%H:%M:%S'))
+def create_empty_and_save_df(file_name='empty_predictions.csv'):
+    # Create an empty DataFrame with two columns: 'date' and 'prediction'
+    df = pd.DataFrame(columns=['date', 'prediction'])
+
+    # Save the DataFrame to a CSV file
+    df.to_csv(file_name, index=False)
+    print(f"Empty DataFrame saved to {file_name}")
+
+
+def add_entry_to_csv(file_name, new_date, new_prediction):
+    try:
+        # Read the existing CSV into a DataFrame
+        df = pd.read_csv(file_name)
+
+        # Create a new DataFrame with the new entry
+        new_row = pd.DataFrame({'date': [new_date], 'prediction': [new_prediction]})
+
+        # Concatenate the new row with the existing DataFrame
+        df = pd.concat([df, new_row], ignore_index=True)
+
+        # Save the updated DataFrame back to the CSV file
+        df.to_csv(file_name, index=False)
+        print(f"Added new entry and saved to {file_name}")
+    except FileNotFoundError:
+        print(f"File '{file_name}' not found. Please provide a valid CSV file.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 
 
-    else:
-        # Sleep for 5 minutes before checking again
-        time.sleep(300)
-        currentTime = datetime.now()
+
+create_empty_and_save_df("Predictions24:25")
+
+

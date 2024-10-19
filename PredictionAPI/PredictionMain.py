@@ -1,10 +1,11 @@
 import json
 import time
-from datetime import datetime, date, timedelta
+from datetime import datetime, timedelta
 from datetime import time as a_time
 from DataManipulationObject import DataManipulator
-from PredictionSoftware import getPrediction
+from PredictionSoftware import SnowPredictor
 from WeatherAPI import WeatherGetter
+import pandas as pd
 
 
 def main():
@@ -32,6 +33,7 @@ def runningAPI():
     #time first hourly data call
     currentTime = datetime.now()
     nextTime = currentTime.replace(minute=0, second=0, microsecond=0)
+    predictionObject = SnowPredictor()
     try:
         while True:
             if currentTime > nextTime:
@@ -48,6 +50,15 @@ def runningAPI():
                     dataObject.manipulateForecastData()
                     #make new df for real weather data
                     dataObject.makeAveragesDF()
+                    #store final prediction for the previous day
+                    current_date = datetime.now()
+                    formatted_date = current_date.strftime("%-m/%-d/%y")
+                    add_entry_to_csv('Predictions24:25.csv', formatted_date, dataObject.getTomorrowsPrediction())
+                elif currentTime.hour == 13:
+                    current_date = datetime.now()
+                    tomorrow_date = current_date + timedelta(days=1)
+                    formatted_tomorrow = tomorrow_date.strftime("%-m/%-d/%y")
+                    add_entry_to_csv('Predictions24:25.csv', formatted_tomorrow, dataObject.getTomorrowsPrediction())
                 #update real weather df
                 updateAverages(dataObject)
                 #combine forecast and real data for model
@@ -55,7 +66,7 @@ def runningAPI():
                 print("DATA FOR MODEL: ")
                 print(modelData)
                 #make prediction
-                prediction = getPrediction(modelData)
+                prediction = predictionObject.makePrediction(modelData)
                 #store updated prediction
                 dataObject.updateTomorrowsPrediction(prediction)
                 #write to json
@@ -70,6 +81,26 @@ def runningAPI():
         print("Program interrupted by user. Exiting...")
     except Exception as e:
         print(f"An error occurred in apiRunning: {e}")
+
+
+def add_entry_to_csv(file_name, new_date, new_prediction):
+    try:
+        # Read the existing CSV into a DataFrame
+        df = pd.read_csv(file_name)
+
+        # Create a new DataFrame with the new entry
+        new_row = pd.DataFrame({'date': [new_date], 'prediction': [new_prediction]})
+
+        # Concatenate the new row with the existing DataFrame
+        df = pd.concat([df, new_row], ignore_index=True)
+
+        # Save the updated DataFrame back to the CSV file
+        df.to_csv(file_name, index=False)
+        print(f"Added new entry and saved to {file_name}")
+    except FileNotFoundError:
+        print(f"File '{file_name}' not found. Please provide a valid CSV file.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 
 def updateAverages(dataObject):

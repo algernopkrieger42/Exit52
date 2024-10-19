@@ -13,6 +13,8 @@ const port = 3002;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+app.set('trust proxy', 1);
+
 // Apply Helmet for basic security (sets security-related headers)
 app.use(helmet());
 
