@@ -1,9 +1,10 @@
 from datetime import datetime
 
 import pandas as pd
+from PredictionSoftware import SnowPredictor
 
-
-def create_empty_and_save_df(file_name='empty_predictions.csv'):
+predictor = SnowPredictor()
+'''def create_empty_and_save_df(file_name='empty_predictions.csv'):
     # Create an empty DataFrame with two columns: 'date' and 'prediction'
     df = pd.DataFrame(columns=['date', 'prediction'])
 
@@ -34,6 +35,7 @@ def add_entry_to_csv(file_name, new_date, new_prediction):
 
 
 
-create_empty_and_save_df("Predictions24:25")
+create_empty_and_save_df("Predictions24:25.csv")'''
+
 
 

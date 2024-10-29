@@ -58,6 +58,8 @@ class SnowPredictor:
 
     def makePrediction(self, todaysWeather):
         todaysWeatherScaled = self.scalar.transform(todaysWeather)
+        print("Scaled Data")
+        print(todaysWeatherScaled)
         prediction = self.model.predict(todaysWeatherScaled)
         return self.binPrediction(prediction)
 

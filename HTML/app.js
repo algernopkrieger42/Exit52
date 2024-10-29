@@ -8,8 +8,10 @@ var output;
 var data;
 
 export async function displayPrediction() {
-    document.getElementById("button").style.display = 'none';
+    document.getElementById("loadingWindow").style.display = 'none';
     document.getElementById("float-container").style.display = 'flex';
+    document.getElementById("infoButton").style.display = 'flex'
+
 }
 
 export async function displayInfo(){
@@ -68,13 +70,16 @@ function setInfo() {
 }
 
 try {
+    document.getElementById("errorWindow").style.display = 'none';
     data = await fetchAPI(); // Wait for the fetchAPI promise to resolve and save the data to a variable
 
-    todaysPrediction(data); // Example function call
+    todaysPrediction(data);
     tomorrowsPrediction(data);
     setInfo()
+    displayPrediction()
 } catch (error) {
     console.error('Error:', error);
+    document.getElementById("errorWindow").style.display = 'block';
 }
 
 

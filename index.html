@@ -25,14 +25,15 @@
     </head>
     <body>
         <div class="image-container">
-            <button id="button" class="button" onclick="displayPrediction()">Display Predictions</button> 
+            <div id="loadingWindow" class="window">Loading Predictions...</div>
+            <div id="errorWindow" class="window">There was an error loading predictions</div> 
         </div>   
         <div id='float-container' class="float-container">
             <div class="float-child">
-                <box1 id="box1" class="box">404</box1>
+                <box1 id="box1" class="box"></box1>
             </div>
             <div class="float-child">
-                <box2 id="box2" class="box">Pow Not Found</box2>
+                <box2 id="box2" class="box"></box2>
             </div>   
         </div>
         <div id="infoButton" class="infoButton" onclick="displayInfo()">info</div>
