@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="960bb278-b44c-4c02-9747-38b2ecf73f8d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ExpressServer/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/express.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExpressServer/predictions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/predictions.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExpressServer/tunnel.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/tunnel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataManipulationObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulationObject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionSoftware.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionSoftware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predictions24:25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingthings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingthings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predictions24:25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Predictions24:25.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,23 +24,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2o5TVFwxA1heh15iXV0jyALfjC5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.PredictionMain.executor": "Run",
-    "Python.testingthings.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.PredictionMain.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testingthings.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

@@ -14,7 +14,6 @@ def main():
     except Exception as e:
         print(f"an error occurred in the main function: {e.__class__.__name__}: {e}")
 
-
 def timingTheStart():
     startTime = a_time(hour=0, minute=5, second=0)
     currentTime = datetime.now().time()
@@ -108,14 +107,14 @@ def updateAverages(dataObject):
     newWeatherDF = dataObject.getNewCurrentWeather()
     currentAveragesDF = dataObject.getCurrentWeatherAverages()
     #update numbers for temps and precip
-    currentAveragesDF.loc[0, 'avgTempF'] = currentAveragesDF.loc[0, 'avgTempF'] + newWeatherDF.loc[0, 'temp']
-    currentAveragesDF.loc[0, 'maxTempF'] = max(currentAveragesDF.loc[0, 'maxTempF'], newWeatherDF.loc[0, 'temp'])
-    currentAveragesDF.loc[0, 'precipIn'] = currentAveragesDF.loc[0, 'precipIn'] + newWeatherDF.loc[0, 'precip']
+    currentAveragesDF.loc[0, 'avgTempF'] = currentAveragesDF.loc[0, 'avgTempF'] + newWeatherDF.loc[0, 'tempF']
+    currentAveragesDF.loc[0, 'maxTempF'] = max(currentAveragesDF.loc[0, 'maxTempF'], newWeatherDF.loc[0, 'tempF'])
+    currentAveragesDF.loc[0, 'precipIn'] = currentAveragesDF.loc[0, 'precipIn'] + newWeatherDF.loc[0, 'precipInches']
     #first hour of the day averages being zero is a problem
     if currentAveragesDF.loc[0, 'minTempF'] == 0:
-        currentAveragesDF.loc[0, 'minTempF'] = newWeatherDF.loc[0, 'temp']
+        currentAveragesDF.loc[0, 'minTempF'] = newWeatherDF.loc[0, 'tempF']
     else:
-        currentAveragesDF.loc[0, 'minTempF'] = min(currentAveragesDF.loc[0, 'minTempF'], newWeatherDF.loc[0, 'temp'])
+        currentAveragesDF.loc[0, 'minTempF'] = min(currentAveragesDF.loc[0, 'minTempF'], newWeatherDF.loc[0, 'tempF'])
     dataObject.storeCurrentWeatherAverages(currentAveragesDF)
 
 

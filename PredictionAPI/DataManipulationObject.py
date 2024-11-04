@@ -45,8 +45,8 @@ class DataManipulator:
 
     def manipulateForecastData(self):
         df = pd.read_csv('Data/CurrentData/TodaysHourlyForecast.csv')
-        df = df[['temp', 'precip']]
-        df.rename(columns={'temp': 'avgTempF', 'precip': 'precipIn'}, inplace=True)
+        df = df[['tempF', 'precipInches']]
+        df.rename(columns={'tempF': 'avgTempF', 'precipInches': 'precipIn'}, inplace=True)
         df['minTempF'] = df['avgTempF']
         df['maxTempF'] = df['avgTempF']
 
