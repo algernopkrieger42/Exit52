@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="960bb278-b44c-4c02-9747-38b2ecf73f8d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ExpressServer/predictions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/predictions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExpressServer/tunnel.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/tunnel.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataManipulationObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulationObject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Predictions24:25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Predictions24:25.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +27,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.PredictionMain.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testingthings.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.PredictionMain.executor": "Run",
+    "Python.WeatherAPI.executor": "Run",
+    "Python.testingthings.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

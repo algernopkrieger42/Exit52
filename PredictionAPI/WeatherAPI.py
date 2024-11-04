@@ -15,18 +15,35 @@ class WeatherGetter:
             print(f"URL Erroar: {e.reason}")
 
 
+
+
     def getForecast(self):
         todaysDate = date.today()
         todaysDate = todaysDate.strftime('%Y-%m-%d')
         url2_hourly = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=e8cc942ed1bb45698e755158240411&q=47.4244,-121.4184&format=csv&num_of_days=1&fx=yes&cc=no&tp=1"
+
         try:
+            # Download the CSV file
             urllib.request.urlretrieve(url2_hourly, "Data/CurrentData/TodaysHourlyForecast.csv")
+
+            # Open and process the CSV file to skip the header and overview row
+            with open("Data/CurrentData/TodaysHourlyForecast.csv", "r") as infile:
+                lines = infile.readlines()
+
+            # Remove the header comments and the overview row (first four lines)
+            cleaned_lines = lines[9:]  # Skips the first four lines
+
+            # Write the cleaned data to a new file
+            with open("Data/CurrentData/CleanedHourlyForecast.csv", "w") as outfile:
+                outfile.writelines(cleaned_lines)
 
         except urllib.error.HTTPError as e:
             print(f"HTTP Error: {e.code}")
         except urllib.error.URLError as e:
-            print(f"URL Erroar: {e.reason}")
+            print(f"URL Error: {e.reason}")
 
+
+# This function will create a CSV file `CleanedHourlyForecast.csv` that starts directly with the hourly data.
 
 
 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/47.4244,-121.4184/1990-11-01/1991-04-01/?unitGroup=us&include=hours&key=LVK3TNSG9UMRWNRTS7QABR2NQ&contentType=csv'
