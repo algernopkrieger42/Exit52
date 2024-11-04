@@ -107,8 +107,8 @@ def updateAverages(dataObject):
     newWeatherDF = dataObject.getNewCurrentWeather()
     currentAveragesDF = dataObject.getCurrentWeatherAverages()
     #update numbers for temps and precip
-    currentAveragesDF.loc[0, 'avgTempF'] = currentAveragesDF.loc[0, 'avgTempF'] + newWeatherDF.loc[0, 'tempF']
-    currentAveragesDF.loc[0, 'maxTempF'] = max(currentAveragesDF.loc[0, 'maxTempF'], newWeatherDF.loc[0, 'tempF'])
+    currentAveragesDF.loc[0, 'avgTempF'] = currentAveragesDF.loc[0, 'avgTempF'] + newWeatherDF.loc[0, 'temp_F']
+    currentAveragesDF.loc[0, 'maxTempF'] = max(currentAveragesDF.loc[0, 'maxTempF'], newWeatherDF.loc[0, 'temp_F'])
     currentAveragesDF.loc[0, 'precipIn'] = currentAveragesDF.loc[0, 'precipIn'] + newWeatherDF.loc[0, 'precipInches']
     #first hour of the day averages being zero is a problem
     if currentAveragesDF.loc[0, 'minTempF'] == 0:

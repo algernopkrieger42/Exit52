@@ -1,9 +1,19 @@
 from datetime import datetime
 
 import pandas as pd
-from PredictionSoftware import SnowPredictor
 
-predictor = SnowPredictor()
+from WeatherAPI import WeatherGetter
+from DataManipulationObject import DataManipulator
+
+
+dataObject = DataManipulator()
+dataObject.manipulateForecastData()
+averages = dataObject.getForecastAverages()
+print(averages)
+print(averages.loc[22, 'avgTempF'])
+
+
+
 '''def create_empty_and_save_df(file_name='empty_predictions.csv'):
     # Create an empty DataFrame with two columns: 'date' and 'prediction'
     df = pd.DataFrame(columns=['date', 'prediction'])

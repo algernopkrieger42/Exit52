@@ -32,7 +32,7 @@ class DataManipulator:
         return datetime.now().hour
 
     def getNewCurrentWeather(self):
-        return pd.read_csv("Data/CurrentData/CurrentWeather.csv")
+        return pd.read_csv("Data/CurrentData/Cleaned_CurrentWeather.csv")
 
     def getCurrentWeatherAverages(self):
         return pd.read_csv('Data/CurrentAverages/CurrentAverages.csv')
@@ -44,7 +44,7 @@ class DataManipulator:
         return pd.read_csv('Data/CurrentAverages/Todays_Manipulated_Forecast.csv')
 
     def manipulateForecastData(self):
-        df = pd.read_csv('Data/CurrentData/TodaysHourlyForecast.csv')
+        df = pd.read_csv('Data/CurrentData/Cleaned_TodaysHourlyForecast.csv')
         df = df[['tempF', 'precipInches']]
         df.rename(columns={'tempF': 'avgTempF', 'precipInches': 'precipIn'}, inplace=True)
         df['minTempF'] = df['avgTempF']
@@ -56,5 +56,5 @@ class DataManipulator:
             df.loc[df.index[x - 1], 'maxTempF'] = df.loc[x:len(df.index), 'maxTempF'].max()
             df.loc[df.index[x - 1], 'precipIn'] = df.loc[x:len(df.index), 'precipIn'].sum()
         df = df.drop(df.index[-1:])
-        df.iloc[-1] = 0
+        #df.iloc[-1] = 0
         df.to_csv('Data/CurrentAverages/Todays_Manipulated_Forecast.csv', index=False)
