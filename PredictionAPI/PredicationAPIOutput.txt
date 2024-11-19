@@ -1,0 +1,152 @@
+11/06/24 00:06 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 01:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 02:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 03:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 04:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 05:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 06:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 07:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0    31.125            0.0
+11/06/24 08:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0    31.125            0.0
+11/06/24 09:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      40.0      22.0  31.166667            0.0
+11/06/24 10:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      40.0      22.0  31.291667            0.0
+11/06/24 11:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0     31.25            0.0
+11/06/24 12:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0    31.125            0.0
+11/06/24 13:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      40.0      22.0  31.083333            0.0
+11/06/24 14:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      40.0      22.0      31.0            0.0
+11/06/24 15:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      40.0      22.0  30.958333            0.0
+11/06/24 16:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      39.0      22.0  30.833333            0.0
+11/06/24 17:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      39.0      22.0  30.833333            0.0
+11/06/24 18:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      39.0      22.0  30.666667            0.0
+11/06/24 19:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      39.0      22.0  30.583333            0.0
+11/06/24 20:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      39.0      22.0  30.541667            0.0
+11/06/24 21:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      39.0      22.0  30.583333            0.0
+11/06/24 22:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      39.0      22.0    30.875            0.0
+11/06/24 23:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      39.0      22.0  30.958333            0.0
+11/07/24 00:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      31.0  38.791667            0.0
+11/07/24 01:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      31.0  38.666667            0.0
+11/07/24 02:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      31.0  38.541667            0.0
+11/07/24 03:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.416667            0.0
+11/07/24 04:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.458333            0.0
+11/07/24 05:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.333333            0.0
+11/07/24 06:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.208333            0.0
+11/07/24 07:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.083333            0.0
+11/07/24 08:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.083333            0.0
+11/07/24 09:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.083333            0.0
+11/07/24 10:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  38.041667            0.0
+11/07/24 11:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  37.958333            0.0
+11/07/24 12:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      48.0      30.0    37.875            0.0
+11/07/24 13:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      48.0      30.0  37.791667            0.0
+11/07/24 14:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      47.0      30.0  37.666667            0.0
+11/07/24 15:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      47.0      30.0    37.625            0.0
+11/07/24 16:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      46.0      30.0      37.5            0.0
+11/07/24 17:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      46.0      30.0  37.416667            0.0
+11/07/24 18:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      46.0      30.0  37.333333            0.0
+11/07/24 19:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      46.0      30.0  37.291667            0.0
+11/07/24 20:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      46.0      30.0  37.291667            0.0
+11/07/24 21:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      46.0      30.0     37.25            0.0
+11/07/24 22:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      46.0      30.0  37.166667            0.0
+11/07/24 23:01 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      46.0      30.0      37.0            0.0
+11/08/24 00:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      50.0      34.0  41.833333            0.0
+11/08/24 01:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0     41.75            0.0
+11/08/24 02:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      50.0      33.0  41.666667            0.0
+11/08/24 03:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0     41.75            0.0
+11/08/24 04:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      50.0      33.0  41.833333            0.0
+11/08/24 05:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0    41.875            0.0
+11/08/24 06:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0    41.875            0.0
+11/08/24 07:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0    41.875            0.0
+11/08/24 08:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0    41.875            0.0
+11/08/24 09:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0    41.875            0.0
+11/08/24 10:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0    41.875            0.0
+11/08/24 11:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0     41.75            0.0
+11/08/24 12:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0     41.75            0.0
+11/08/24 13:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0     41.75            0.0
+11/08/24 14:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      50.0      33.0     41.75            0.0
+11/08/24 15:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      50.0      33.0  41.708333            0.0
+11/08/24 16:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      49.0      33.0    41.625            0.0
+11/08/24 17:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      49.0      33.0  41.541667            0.0
+11/08/24 18:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      49.0      33.0  41.458333            0.0
+11/08/24 19:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      49.0      33.0  41.333333            0.0
+11/08/24 20:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      49.0      33.0     41.25            0.0
+11/08/24 21:02 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      49.0      33.0    41.125            0.0
+11/08/24 22:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      49.0      33.0  40.916667            0.0
+11/08/24 23:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      49.0      33.0  40.833333            0.0
+11/09/24 00:02 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      47.0      39.0  42.083333            0.0
+11/10/24 00:06 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      42.0      37.0  40.208333            0.3
+11/10/24 01:01 - Model Data:    maxtempF  mintempF   avgtempF  totalprecipIn
+0      42.0      37.0  40.166667            0.3
+11/11/24 00:07 - Model Data:    maxtempF  mintempF  avgtempF  totalprecipIn
+0      38.0      35.0      37.0            0.5

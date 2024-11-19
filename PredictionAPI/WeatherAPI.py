@@ -1,11 +1,12 @@
 import urllib.request
 from datetime import date
+import traceback
 
 class WeatherGetter:
     #Grab api testData once an hour
     def getCurrent(self):
         todaysDate = date.today().strftime('%Y-%m-%d')
-        url2_current = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=e8cc942ed1bb45698e755158240411&q=47.4244,-121.4184&format=csv&fx=no&cc=yes"
+        url2_current = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=e8cc942ed1bb45698e755158240411&q=47.4244,-121.4184&format=csv&fx=no&cc=yes&localObsTime=yes"
 
         try:
             # Download the CSV file
@@ -31,6 +32,9 @@ class WeatherGetter:
             print(f"HTTP Error: {e.code}")
         except urllib.error.URLError as e:
             print(f"URL Error: {e.reason}")
+        except Exception as e:
+            print(f"Error in getCurrent: {str(e)}")
+            print(traceback.format_exc())
 
 
 
@@ -62,6 +66,9 @@ class WeatherGetter:
             print(f"HTTP Error: {e.code}")
         except urllib.error.URLError as e:
             print(f"URL Error: {e.reason}")
+        except Exception as e:
+            print(f"Error in getForecast: {str(e)}")
+            print(traceback.format_exc())
 
 
 # This function will create a CSV file `CleanedHourlyForecast.csv` that starts directly with the hourly data.

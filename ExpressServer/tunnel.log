@@ -677,3 +677,744 @@ Error: connection refused: localtunnel.me:25509 (check your firewall settings)
 
 Node.js v18.20.4
 your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+LocalTunnel started successfully.
+your url is: https://52crewdata.loca.lt
+LocalTunnel started successfully.
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:21019 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+LocalTunnel has stopped. Restarting...
+your url is: https://52crewdata.loca.lt
+LocalTunnel started successfully.
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:10647 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:31485 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:25243 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://yellow-pug-79.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:14035 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:18691 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:34369 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:26453 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:11497 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://big-snail-78.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:21999 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:31801 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://horrible-mayfly-50.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:24591 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:30319 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:31133 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:22461 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:16319 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:20749 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:35725 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:14181 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:10409 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:24181 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:34721 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:14741 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:10557 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:28027 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:25579 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:33635 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:34683 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:26469 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:27203 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://horrible-otter-67.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:25491 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:17161 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:22319 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:19811 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:27709 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:21979 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:21745 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:20889 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:32077 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:11471 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://white-penguin-80.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://grumpy-hound-64.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:18493 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:12077 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://slippery-catfish-21.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:37115 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:36967 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:25013 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:17815 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:28499 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:33155 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+npm notice
+npm notice New minor version of npm available! 10.7.0 -> 10.9.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.9.0
+npm notice To update run: npm install -g npm@10.9.0
+npm notice
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://happy-sloth-27.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:29505 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:17891 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:16655 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://quiet-bear-0.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:12007 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:12577 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+/usr/lib/node_modules/localtunnel/bin/lt.js:81
+    throw err;
+    ^
+
+Error: connection refused: localtunnel.me:12107 (check your firewall settings)
+    at Socket.<anonymous> (/usr/lib/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.20.4
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://splendid-firefox-91.loca.lt
+your url is: https://perfect-wombat-4.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://52crewdata.loca.lt
+your url is: https://warm-fish-62.loca.lt
+your url is: https://empty-crab-52.loca.lt

@@ -5,73 +5,98 @@ from sklearn.neural_network import MLPClassifier
 from imblearn.over_sampling import SMOTE
 import numpy as np
 import pandas as pd
+import traceback
 
 
 def getFeatures():
-    return pd.read_csv("Data/HistoricalData/KNNFeaturesNonScaled.csv")
+    try:
+        return pd.read_csv("Data/HistoricalData/KNNFeaturesNonScaled.csv")
+    except Exception as e:
+        print(f"Error in getGeaturees: {str(e)}")
+        print(traceback.format_exc())
 
 
 def getTargetFeature():
-    return pd.read_csv("Data/HistoricalData/actualFinalizedSnow.csv")
+    try:
+        return pd.read_csv("Data/HistoricalData/actualFinalizedSnow.csv")
+    except Exception as e:
+        print(f"Error in getTargetFeature: {str(e)}")
+        print(traceback.format_exc())
 
 
 class SnowPredictor:
     def __init__(self):
-        self.bins = []
-        self.scalar = None
-        self.model = None
-        self.fitScalarAndModel()
+        try:
+            self.bins = []
+            self.scalar = None
+            self.model = None
+            self.fitScalarAndModel()
+        except Exception as e:
+            print(f"Error in PredictionSoftware Constructor: {str(e)}")
+            print(traceback.format_exc())
 
     def fitScalarAndModel(self):
-        features = getFeatures()
-        targetFeature = getTargetFeature()
-        targetFeature.loc[targetFeature['24HourSnow'] > 20, '24HourSnow'] = 20
-        bins = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-        self.bins = bins
-        target_binned = pd.cut(
-            targetFeature['24HourSnow'],
-            bins=bins,
-            labels=False,
-            include_lowest=True,
-            right=True
-        )
-        target_binned = np.where(targetFeature['24HourSnow'] == 0, 0, target_binned + 1)
-        smote = SMOTE(random_state=42)
-        X_smote, y_smote = smote.fit_resample(features, target_binned)
-        self.scalar = StandardScaler()
-        scaledSmoteFeatures = self.scalar.fit_transform(X_smote)
-        clf = MLPClassifier(
-            hidden_layer_sizes=(400, 350, 300, 250),
-            activation='relu',
-            solver='adam',
-            batch_size=55,
-            learning_rate='adaptive',
-            random_state=1,
-            max_iter=10000,
-            learning_rate_init=0.0009,
-            early_stopping=True,
-            alpha=0.001,
-            momentum=0.9
-        )
-        clf.fit(scaledSmoteFeatures, y_smote)
-        self.model = clf
+        try:
+            features = getFeatures()
+            targetFeature = getTargetFeature()
+            targetFeature.loc[targetFeature['24HourSnow'] > 20, '24HourSnow'] = 20
+            bins = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+            self.bins = bins
+            target_binned = pd.cut(
+                targetFeature['24HourSnow'],
+                bins=bins,
+                labels=False,
+                include_lowest=True,
+                right=True
+            )
+            target_binned = np.where(targetFeature['24HourSnow'] == 0, 0, target_binned + 1)
+            smote = SMOTE(random_state=42)
+            X_smote, y_smote = smote.fit_resample(features, target_binned)
+            self.scalar = StandardScaler()
+            scaledSmoteFeatures = self.scalar.fit_transform(X_smote)
+            clf = MLPClassifier(
+                hidden_layer_sizes=(400, 350, 300, 250),
+                activation='relu',
+                solver='adam',
+                batch_size=55,
+                learning_rate='adaptive',
+                random_state=1,
+                max_iter=10000,
+                learning_rate_init=0.0009,
+                early_stopping=True,
+                alpha=0.001,
+                momentum=0.9
+            )
+            clf.fit(scaledSmoteFeatures, y_smote)
+            self.model = clf
+
+        except Exception as e:
+            print(f"Error in fitScalarAndModel: {str(e)}")
+            print(traceback.format_exc())
 
     def makePrediction(self, todaysWeather):
-        todaysWeatherScaled = self.scalar.transform(todaysWeather)
-        print("Scaled Data")
-        print(todaysWeatherScaled)
-        prediction = self.model.predict(todaysWeatherScaled)
-        return self.binPrediction(prediction)
+        try:
+            todaysWeatherScaled = self.scalar.transform(todaysWeather)
+            prediction = self.model.predict(todaysWeatherScaled)
+            return self.binPrediction(prediction)
+        except Exception as e:
+            print(f"Error in makePrediction: {str(e)}")
+            print(traceback.format_exc())
 
     def binPrediction(self, binIndex):
-        bins = self.bins
-        if 0 <= binIndex < len(bins):
-            if binIndex == 0:
-                return "0"
+        try:
+            bins = self.bins
+            binIndex = int(binIndex[0])
+            if 0 <= binIndex < len(bins):
+                if binIndex == 0:
+                    return "0"
+                else:
+                    return f"{bins[binIndex - 1]}-{bins[binIndex]}"
             else:
-                return f"{bins[binIndex - 1]}-{bins[binIndex]}"
-        else:
-            return f"Overflow{binIndex}"
+                return f"Overflow{binIndex}"
+        except Exception as e:
+            print(f"Error in binPrediction: {str(e)}")
+            print(traceback.format_exc())
 
     '''OLD PREDICTION METHOD
 
