@@ -35,6 +35,13 @@ app.use(cors({
     },
 }));
 
+app.options('/predictions.json', cors({
+    origin: 'https://algernopkrieger42.github.io',
+    methods: ['GET'],
+    allowedHeaders: ['Content-Type', 'bypass-tunnel-reminder'],
+    optionsSuccessStatus: 204, // Fast response for preflight
+}));
+
 // Set up a rate limiter to limit requests (100 requests per 15 minutes per IP)
 /*const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
@@ -42,7 +49,7 @@ app.use(cors({
     message: 'Too many requests, please try again later.',
 });
 app.use(limiter);*/
-app.use((req, res, next) => next());
+//app.use((req, res, next) => next());
 
 // Serve the latest predictions.json file
 app.get('/predictions.json', (req, res) => {
