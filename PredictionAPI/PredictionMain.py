@@ -2,6 +2,9 @@ import json
 import time
 from datetime import datetime, timedelta
 from datetime import time as a_time
+
+import pytz
+
 from DataManipulationObject import DataManipulator
 from PredictionSoftware import SnowPredictor
 from WeatherAPI import WeatherGetter
@@ -20,27 +23,18 @@ def main():
 
 
 def timingTheStart():
-    # Configure logging
-    logging.basicConfig(
-        filename='error_log.log',  # Log to a file
-        filemode='a',  # Append to the file (create if it doesn't exist)
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        level=logging.ERROR  # Set the logging level to ERROR
-    )
-    logger = logging.getLogger(__name__)
-
     try:
+        pst = pytz.timezone("America/Los_Angeles")
         startTime = a_time(hour=0, minute=5, second=0)
-        currentTime = datetime.now().time()
+        currentTime = datetime.now(pst).time()
         print("made it to timing the thing")
         while currentTime > startTime:
             time.sleep(180)
-            currentTime = datetime.now().time()
+            currentTime = datetime.now(pst).time()
         runningAPI()
     except Exception as e:
-
-        logger.error(f"Error in timingTheStart: {str(e)}")
-        logger.error("Traceback:\n" + traceback.format_exc())
+        print(f"Error in timingTheStart: {str(e)}")
+        print("Traceback:\n" + traceback.format_exc())
 
 
 def runningAPI():
@@ -49,7 +43,9 @@ def runningAPI():
     #instanciate object for data manipulation
     dataObject = DataManipulator()
     #time first hourly data call
-    currentTime = datetime.now()
+    pst = pytz.timezone("America/Los_Angeles")
+    currentTime = datetime.now(pst)
+    print("Aproaching the start. PST:",currentTime.time(),"MST:",datetime.now().time())
     nextTime = currentTime.replace(minute=0, second=0, microsecond=0)
     predictionObject = SnowPredictor()
     logging.basicConfig(
@@ -59,9 +55,11 @@ def runningAPI():
         format='%(asctime)s - %(message)s',  # Format to include timestamp and message
         datefmt='%m/%d/%y %H:%M'  # Date format to show only hour and minute in 24-hour format
     )
+    logger = logging.getLogger(__name__)
     try:
         while True:
-            if currentTime > nextTime:
+            if currentTime >= nextTime:
+                print("Things are happening. PST:",currentTime.time(),"MST:",datetime.now().time())
                 #to the minute weather
                 weather.getCurrent()
                 #forecast data is only grabbed once a day
@@ -76,21 +74,22 @@ def runningAPI():
                     #make new df for real weather data
                     dataObject.makeAveragesDF()
                     #store final prediction for the previous day
-                    current_date = datetime.now()
+                    current_date = datetime.now(pst)
                     formatted_date = current_date.strftime("%-m/%-d/%y")
                     add_entry_to_csv('Predictions24:25.csv', formatted_date, dataObject.getTomorrowsPrediction())
                 elif currentTime.hour == 13:
-                    current_date = datetime.now()
+                    current_date = datetime.now(pst)
                     tomorrow_date = current_date + timedelta(days=1)
                     formatted_tomorrow = tomorrow_date.strftime("%-m/%-d/%y")
                     add_entry_to_csv('Predictions24:25.csv', formatted_tomorrow, dataObject.getTomorrowsPrediction())
                 #update real weather d
-                updateAverages(dataObject)
+                updateAverages(dataObject, logger)
                 #combine forecast and real data for model
                 modelData = prepDataForModel(dataObject)
-                logging.info(f"Model Data: {modelData}")
+                logger.info(f"Model Data: \n{modelData}")
                 #make prediction
                 prediction = predictionObject.makePrediction(modelData)
+                logger.info(f"Prediction: {prediction}")
                 #store updated prediction
                 dataObject.updateTomorrowsPrediction(prediction)
                 #write to json
@@ -99,7 +98,7 @@ def runningAPI():
                 nextTime = (nextTime + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
             else:
                 time.sleep(300)
-                currentTime = datetime.now()
+                currentTime = datetime.now(pst)
     except KeyboardInterrupt:
         print("Program interrupted by user. Exiting...")
     except Exception as e:
@@ -129,12 +128,12 @@ def add_entry_to_csv(file_name, new_date, new_prediction):
         print(traceback.format_exc())
 
 
-def updateAverages(dataObject):
+def updateAverages(dataObject, logger):
     try:
         #get new data and current averages
         newWeatherDF = dataObject.getNewCurrentWeather()
         currentAveragesDF = dataObject.getCurrentWeatherAverages()
-        print(f"Current Averages Before Changes: {currentAveragesDF}")
+        logger.info(f"Current Averages Before Changes:\n {currentAveragesDF}")
         #update numbers for temps and precip
         currentAveragesDF.loc[0, 'avgTempF'] = currentAveragesDF.loc[0, 'avgTempF'] + newWeatherDF.loc[0, 'temp_F']
         currentAveragesDF.loc[0, 'maxTempF'] = max(currentAveragesDF.loc[0, 'maxTempF'], newWeatherDF.loc[0, 'temp_F'])
@@ -144,8 +143,8 @@ def updateAverages(dataObject):
             currentAveragesDF.loc[0, 'minTempF'] = newWeatherDF.loc[0, 'temp_F']
         else:
             currentAveragesDF.loc[0, 'minTempF'] = min(currentAveragesDF.loc[0, 'minTempF'], newWeatherDF.loc[0, 'temp_F'])
-        print(f"Current Averages: {currentAveragesDF}")
-        print(f"New Weather Data: {newWeatherDF}")
+        logger.info(f"Current Averages After Changes: \n{currentAveragesDF}")
+        logger.info(f"New Weather Data: \n{newWeatherDF}")
         dataObject.storeCurrentWeatherAverages(currentAveragesDF)
     except Exception as e:
         print(f"Error in updateAverages: {str(e)}")
@@ -204,7 +203,8 @@ def determineOriginalIndicator(day):
 
 def get_date():
     try:
-        current_date = datetime.now()
+        pst = pytz.timezone("America/Los_Angeles")
+        current_date = datetime.now(pst)
         formatted_date = current_date.strftime("%-m/%-d/%y")
         todayStatement = "Today - " + str(formatted_date) + "'s" + " Prediction:"
         return todayStatement
@@ -214,7 +214,8 @@ def get_date():
 
 def get_tomorrow_date():
     try:
-        current_date = datetime.now()
+        pst = pytz.timezone("America/Los_Angeles")
+        current_date = datetime.now(pst)
         tomorrow_date = current_date + timedelta(days=1)
         formatted_tomorrow = tomorrow_date.strftime("%-m/%-d/%y")
         dateStatement = "Tomorrow - " + str(formatted_tomorrow) + "'s" + " Prediction:"

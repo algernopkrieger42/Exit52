@@ -63,13 +63,7 @@ class DataManipulator:
 
     def getNewCurrentWeather(self):
         try:
-            return pd.read_csv(
-                'Data/CurrentData/Cleaned_CurrentWeather.csv',
-                delimiter=",",
-                quotechar='"',
-                quoting=1,
-                index_col=False  # Ensure no column is used as an index
-            )
+            return pd.read_csv('Data/CurrentData/CurrentWeather.csv')
         except Exception as e:
             print(f"Error in getNewCurrentWeather: {str(e)}")
             print(traceback.format_exc())
@@ -97,7 +91,7 @@ class DataManipulator:
 
     def manipulateForecastData(self):
         try:
-            df = pd.read_csv('Data/CurrentData/Cleaned_TodaysHourlyForecast.csv')
+            df = pd.read_csv('Data/CurrentData/TodaysHourlyForecast.csv')
             df = df[['tempF', 'precipInches']]
             df.rename(columns={'tempF': 'avgTempF', 'precipInches': 'precipIn'}, inplace=True)
             df['minTempF'] = df['avgTempF']

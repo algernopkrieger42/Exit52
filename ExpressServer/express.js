@@ -7,7 +7,7 @@ import helmet from 'helmet';  // Add Helmet for basic security
 import rateLimit from 'express-rate-limit';  // Add rate-limiting
 
 const app = express();
-const port = 3002;
+const port = 3000;
 
 // Get __filename and __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);

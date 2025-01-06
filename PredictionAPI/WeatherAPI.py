@@ -1,71 +1,77 @@
 import urllib.request
 from datetime import date
 import traceback
+import requests
+import pandas as pd
 
 class WeatherGetter:
-    #Grab api testData once an hour
     def getCurrent(self):
-        todaysDate = date.today().strftime('%Y-%m-%d')
-        url2_current = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=e8cc942ed1bb45698e755158240411&q=47.4244,-121.4184&format=csv&fx=no&cc=yes&localObsTime=yes"
-
+        url = "http://api.worldweatheronline.com/premium/v1/weather.ashx"
+        params = {
+            "key": "e8cc942ed1bb45698e755158240411",
+            "q": "47.4244,-121.4184",
+            "format": "json",
+            "fx": "no",
+            "cc": "yes",
+            "localObsTime": "yes"
+        }
         try:
-            # Download the CSV file
-            file_path = "Data/CurrentData/CurrentWeather.csv"
-            cleaned_file_path = "Data/CurrentData/Cleaned_CurrentWeather.csv"
-            urllib.request.urlretrieve(url2_current, file_path)
-
-            # Clean the downloaded CSV file
-            with open(file_path, 'r') as original_file, open(cleaned_file_path, 'w') as cleaned_file:
-                for i, line in enumerate(original_file, start=1):
-                    # Skip lines 1-3 and line 5 (inclusive)
-                    if i in range(1, 4) or i == 5:
-                        continue
-
-                    # Remove the leading '#' on the first column of line 4 (header)
-                    if i == 4:
-                        line = line.lstrip('#')  # Remove the leading '#' from the header
-
-                    # Write the line to the cleaned file
-                    cleaned_file.write(line)
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()
+            current_condition = data.get("data", {}).get("current_condition", [{}])[0]
+            temp_F = current_condition.get("temp_F")
+            precipInches = current_condition.get("precipInches")
+            df = pd.DataFrame(columns=['temp_F', 'precipInches'])
+            df.loc[0] = [temp_F, precipInches]
+            df.to_csv('Data/CurrentData/CurrentWeather.csv', index=False)
 
         except urllib.error.HTTPError as e:
             print(f"HTTP Error: {e.code}")
         except urllib.error.URLError as e:
             print(f"URL Error: {e.reason}")
+        except KeyError as e:
+            print(f"KeyError: Column missing in the data - {e}")
         except Exception as e:
             print(f"Error in getCurrent: {str(e)}")
             print(traceback.format_exc())
 
 
-
     def getForecast(self):
-        todaysDate = date.today().strftime('%Y-%m-%d')
-        url2_hourly = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=e8cc942ed1bb45698e755158240411&q=47.4244,-121.4184&format=csv&num_of_days=1&fx=yes&cc=no&tp=1"
+        url = "http://api.worldweatheronline.com/premium/v1/weather.ashx"
+        params = {
+            "key": "e8cc942ed1bb45698e755158240411",
+            "q": "47.4244,-121.4184",
+            "format": "json",
+            "num_of_days": 1,
+            "fx": "yes",
+            "cc": "no",
+            "tp": 1
+        }
 
+        # Make the API call
         try:
-            # Download the CSV file
-            file_path = "Data/CurrentData/TodaysHourlyForecast.csv"
-            cleaned_file_path = "Data/CurrentData/Cleaned_TodaysHourlyForecast.csv"
-            urllib.request.urlretrieve(url2_hourly, file_path)
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()  # Convert response to JSON
 
-            # Clean the downloaded CSV file
-            with open(file_path, 'r') as original_file, open(cleaned_file_path, 'w') as cleaned_file:
-                for i, line in enumerate(original_file, start=1):
-                    # Skip lines 1-5 and 7-9 (inclusive)
-                    if i in range(1, 6) or i in range(7, 10):
-                        continue
+            # Extract hourly data
+            hourly_data = data["data"]["weather"][0]["hourly"]
 
-                    # Remove the leading '#' on the first column of row 6
-                    if i == 6:
-                        line = line.lstrip('#')  # Remove the leading '#' from the header
-
-                    # Write the line to the cleaned file
-                    cleaned_file.write(line)
+            # Create a DataFrame with tempF and precipInches
+            df = pd.DataFrame(hourly_data)
+            df["tempF"] = df["tempF"].astype(float)
+            df["precipInches"] = df["precipInches"].astype(float)
+            df_filtered = df[["tempF", "precipInches"]]
+            df_filtered.to_csv('Data/CurrentData/TodaysHourlyForecast.csv', index=False)
+            print(df_filtered)
 
         except urllib.error.HTTPError as e:
             print(f"HTTP Error: {e.code}")
         except urllib.error.URLError as e:
             print(f"URL Error: {e.reason}")
+        except KeyError as e:
+            print(f"KeyError: Column missing in the data - {e}")
         except Exception as e:
             print(f"Error in getForecast: {str(e)}")
             print(traceback.format_exc())

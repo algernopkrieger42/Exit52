@@ -7,19 +7,19 @@
     <list default="true" id="960bb278-b44c-4c02-9747-38b2ecf73f8d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../ExpressServer/predictions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/predictions.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExpressServer/tunnel.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ExpressServer/tunnel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/CurrentAverages.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentAverages/Todays_Manipulated_Forecast.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/CurrentData/Cleaned_CurrentWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/Cleaned_CurrentWeather.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/CurrentData/Cleaned_TodaysHourlyForecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/Cleaned_TodaysHourlyForecast.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentData/Cleaned_CurrentWeather.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CurrentData/Cleaned_TodaysHourlyForecast.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/CurrentWeather.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CurrentData/TodaysHourlyForecast.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataManipulationObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManipulationObject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredicationAPIOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PredicationAPIOutput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PredictionMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionSoftware.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionSoftware.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Predictions24:25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Predictions24:25.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error_log.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testingthings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingthings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
