@@ -36,12 +36,13 @@ app.use(cors({
 }));
 
 // Set up a rate limiter to limit requests (100 requests per 15 minutes per IP)
-const limiter = rateLimit({
+/*const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100, // Limit each IP to 100 requests per `windowMs`
     message: 'Too many requests, please try again later.',
 });
-app.use(limiter);
+app.use(limiter);*/
+app.use((req, res, next) => next());
 
 // Serve the latest predictions.json file
 app.get('/predictions.json', (req, res) => {
