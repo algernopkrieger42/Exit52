@@ -45,11 +45,7 @@ function tomorrowsPrediction(json) {
 
 async function fetchAPI() {
     try {
-        const response = await fetch('https://52crewdata.loca.lt/predictions.json', {
-            headers: {
-                'bypass-tunnel-reminder': 'bypass', // You can use any string value here
-            }
-        });
+        const response = await fetch('https://52crewdata.loca.lt/predictions.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
