@@ -5121,3 +5121,29 @@
    maxtempF  mintempF  avgtempF  totalprecipIn
 0      37.0      29.0    31.625            0.1
 01/06/25 14:01 - Prediction: 0-2
+01/06/25 15:01 - Current Averages Before Changes:
+    avgTempF  maxTempF  minTempF  precipIn
+0     436.0      34.0      29.0       0.0
+01/06/25 15:01 - Current Averages After Changes: 
+   avgTempF  maxTempF  minTempF  precipIn
+0     471.0      35.0      29.0       0.0
+01/06/25 15:01 - New Weather Data: 
+   temp_F  precipInches
+0      35           0.0
+01/06/25 15:01 - Model Data: 
+   maxtempF  mintempF   avgtempF  totalprecipIn
+0      37.0      29.0  31.541667            0.1
+01/06/25 15:01 - Prediction: 0-2
+01/06/25 16:01 - Current Averages Before Changes:
+    avgTempF  maxTempF  minTempF  precipIn
+0     471.0      35.0      29.0       0.0
+01/06/25 16:01 - Current Averages After Changes: 
+   avgTempF  maxTempF  minTempF  precipIn
+0     507.0      36.0      29.0       0.0
+01/06/25 16:01 - New Weather Data: 
+   temp_F  precipInches
+0      36           0.0
+01/06/25 16:01 - Model Data: 
+   maxtempF  mintempF  avgtempF  totalprecipIn
+0      37.0      29.0      31.5            0.1
+01/06/25 16:01 - Prediction: 0-2
