@@ -21,7 +21,6 @@ app.use(helmet());
 // Enable CORS (allow all origins)
 const allowedOrigins = [
     'https://algernopkrieger42.github.io',
-    'http://localhost:3000'
 ];
 app.use(cors({
     origin: (origin, callback) => {
