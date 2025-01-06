@@ -19,8 +19,18 @@ app.set('trust proxy', 1);
 app.use(helmet());
 
 // Enable CORS (allow all origins)
+const allowedOrigins = [
+    'https://algernopkrieger42.github.io',
+    'http://localhost:3000'
+];
 app.use(cors({
-    origin: 'https://algernopkrieger42.github.io',
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
 }));
 
 // Set up a rate limiter to limit requests (100 requests per 15 minutes per IP)
