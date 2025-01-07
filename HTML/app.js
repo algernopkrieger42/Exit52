@@ -55,7 +55,8 @@ async function fetchAPI() {
         }
         const text = await response.text();//show text
         console.log("Raw response:", text);
-        const data = await response.json(); // Parse the JSON data
+        const data = JSON.parse(text);
+        //const data = await response.json(); // Parse the JSON data
         return data; // Return the parsed data
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
