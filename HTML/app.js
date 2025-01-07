@@ -53,6 +53,8 @@ async function fetchAPI() {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
+        const text = await response.text();//show text
+        console.log("Raw response:", text);
         const data = await response.json(); // Parse the JSON data
         return data; // Return the parsed data
     } catch (error) {
