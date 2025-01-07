@@ -45,11 +45,7 @@ function tomorrowsPrediction(json) {
 
 async function fetchAPI() {
     try {
-        const response = await fetch('https://enabled-needed-kitten.ngrok-free.app/predictions.json', {
-            headers: {
-                'bypass-tunnel-reminder': 'bypass', // Include if required by your Express server
-            },
-        });
+        const response = await fetch('https://enabled-needed-kitten.ngrok-free.app/predictions.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -60,7 +56,8 @@ async function fetchAPI() {
         //const data = await response.json(); // Parse the JSON data
         return data; // Return the parsed data
     } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
+        console.error('Fetch failed:', error.message);
+        console.error('Full error object:', error);
         throw error; // Rethrow the error to handle it outside the function
     }
 }
