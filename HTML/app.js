@@ -48,6 +48,7 @@ async function fetchAPI() {
         const response = await fetch('https://enabled-needed-kitten.ngrok-free.app/predictions.json', {
             headers: {
                 'bypass-tunnel-reminder': 'bypass', // Include if required by your Express server
+                'ngrok-skip-browser-warning': 'true',
             },
         });
         if (!response.ok) {
