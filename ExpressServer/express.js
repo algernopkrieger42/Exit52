@@ -20,7 +20,7 @@ app.use(helmet());
 
 // Enable CORS (allow all origins)
 const allowedOrigins = [
-    'https://algernopkrieger42.github.io',
+    'https://enabled-needed-kitten.ngrok-free.app',
 ];
 app.use(cors({
     origin: (origin, callback) => {

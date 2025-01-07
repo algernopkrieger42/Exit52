@@ -45,7 +45,11 @@ function tomorrowsPrediction(json) {
 
 async function fetchAPI() {
     try {
-        const response = await fetch('https://enabled-needed-kitten.ngrok-free.app/predictions.json');
+        const response = await fetch('https://enabled-needed-kitten.ngrok-free.app/predictions.json', {
+            headers: {
+                'bypass-tunnel-reminder': 'bypass', // Include if required by your Express server
+            },
+        });
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
